@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our College</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Our college offers a variety of programs to help students achieve their academic goals.</p>
+    </section>
+
+    <section id="courses">
+        <h2>Courses Offered</h2>
+        <ul>
+            <li>Bachelor of Science</li>
+            <li>Bachelor of Arts</li>
+            <li>Master of Science</li>
+            <li>Master of Arts</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@college.edu</p>
+        <p>Phone: (123) 456-7890</p>
+    </section>
+
+    <!-- <div id="chatbot">
+        <div id="chatbox">
+            <div id="messages"></div>
+            <input type="text" id="userInput" placeholder="Ask me anything...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div> -->
+
+    <div id="chatbot" onclick="toggleChat()">
+        <img src="chatbot-logo.jpeg" alt="Chatbot Logo" id="chatbotLogo">
+        <div id="chatbox" style="display: none;">
+            <div id="messages"></div>
+            <input type="text" id="userInput" placeholder="Ask me anything...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
