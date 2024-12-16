@@ -89,12 +89,19 @@ button {
     
 }
 
+
+#CHATBOT {
+    justify-content: center;
+    align-items: center;
+}
+
+
 #chatbox {
     padding: 15px; /* Increased padding for better spacing */
     display: flex;
     flex-direction: column; /* Stack elements vertically */
     height: 100%; /* Full height */
-    width: 200px;
+    width: 300px;
 }
 
 #messages {
@@ -110,8 +117,9 @@ button {
 
 #messages div {
     margin-bottom: 10px; /* Space between messages */
-    padding: 8px; /* Padding for messages */
+    padding: 4px; /* Padding for messages */
     border-radius: 5px; /* Rounded corners for messages */
+    font-size: xx-small;
 }
 
 #messages div.User {
@@ -125,7 +133,7 @@ button {
 }
 
 #userInput {
-    width: 90%; /* Full width */
+    width: 92%; /* Full width */
     padding: 10px; /* Increased padding */
     border: 1px solid #ccc; /* Light border */
     border-radius: 5px; /* Rounded corners */
@@ -146,6 +154,7 @@ button {
 button:hover {
     background-color: #45a049; /* Darker green on hover */
 }
+
 
 /* Media query for smaller screens */
 @media (max-width: 400px) {

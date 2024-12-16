@@ -48,7 +48,12 @@
     </div> -->
 
     <div id="chatbot" onclick="toggleChat()">
-        <img src="chatbot-logo.png" alt="Chatbot Logo" id="chatbotLogo">
+        <!--to make the button image invisible after clicking it-->
+        <button id="resize" style="background-color: #ffffff; display: flex;"><img src="chatbot-logo.png" style="height: 40px; width: 40px;" alt="Chatbot Logo" id="chatbotLogo"></button>
+        <div id="CHATBOT" style="display: none;">
+            <img src="chatbot-logo.png" style="height: 40px; width: 40px;" alt="Chatbot Logo" >
+            <h3>CHATBOT</h3>
+        </div>
         <div id="chatbox" style="display: none;">
             <div id="messages"></div>
             <input type="text" id="userInput" placeholder="Ask me anything...">

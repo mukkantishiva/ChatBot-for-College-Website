@@ -1,3 +1,24 @@
+
+//logo resize
+document.getElementById("resize").addEventListener("click", function(){
+    const image = document.getElementById("chatbotLogo");
+    image.style.display= 'none';
+    // image.style.paddingLeft="15px";
+    // image.style.paddingTop="10px";
+});
+
+
+// new section added to improvise chatbot
+function toggleChat() {
+    const chatbox = document.getElementById('chatbox');
+    const CHATBOT = document.getElementById('CHATBOT');
+    chatbox.style.display = chatbox.style.display === 'none' ? 'flex' : 'flex';//none->flex
+    CHATBOT.style.display = CHATBOT.style.display === 'none' ? 'flex' : 'flex';
+}
+
+
+
+
 function sendMessage() {
     const userInput = document.getElementById('userInput');
     const userMessage = userInput.value;
@@ -6,19 +27,16 @@ function sendMessage() {
     if (userMessage.trim() === "") return;
 
     // Display user message
-    messages.innerHTML += `<div>User: ${userMessage}</div>`;
+    messages.innerHTML += `<div style="text-align : right ;" >User: ${userMessage}</div>`;
     userInput.value = '';
 
     // Generate bot response
     const botResponse = getBotResponse(userMessage);
-    messages.innerHTML += `<div>Bot: ${botResponse}</div>`;
+    messages.innerHTML += `<div style="text-align : left ;" >Bot: ${botResponse}</div>`;
     messages.scrollTop = messages.scrollHeight; // Scroll to the bottom
 }
-// new section added to improvise chatbot
-function toggleChat() {
-    const chatbox = document.getElementById('chatbox');
-    chatbox.style.display = chatbox.style.display === 'none' ? 'flex' : 'flex';//none->flex
-}
+
+
 
 function getBotResponse(input) {
     const lowerInput = input.toLowerCase();
