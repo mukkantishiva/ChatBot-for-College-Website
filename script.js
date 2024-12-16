@@ -27,12 +27,12 @@ function sendMessage() {
     if (userMessage.trim() === "") return;
 
     // Display user message
-    messages.innerHTML += `<div style="text-align : right ;" >User: ${userMessage}</div>`;
+    messages.innerHTML += `<div style="padding : 0 0 0 40px ; text-align : right ;" >User: ${userMessage}</div>`;
     userInput.value = '';
 
     // Generate bot response
     const botResponse = getBotResponse(userMessage);
-    messages.innerHTML += `<div style="text-align : left ;" >Bot: ${botResponse}</div>`;
+    messages.innerHTML += `<div style="padding : 0 40px 0 0 ; text-align : left ;" >Bot: ${botResponse}</div>`;
     messages.scrollTop = messages.scrollHeight; // Scroll to the bottom
 }
 
